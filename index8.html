@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <title>Loop de Números</title>
+    <script>
+        function imprimirNumeros() {
+            let numeros = [];
+            while (true) {
+                let input = prompt("Digite um número (ou 0 para parar):");
+                let numero = parseInt(input);
+                if (numero === 0) break;
+                numeros.push(numero);
+            }
+            console.log("Números digitados:", numeros);
+        }
+    </script>
+</head>
+<body onload="imprimirNumeros()">
+    <h1>Abra o console para ver os números digitados.</h1>
+</body>
+</html>

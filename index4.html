@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   
+    <title>Tabuada de um Número</title>
+    <script>
+       
+        function gerarTabuada() {
+            let numero = parseInt(prompt("Digite um número para ver a tabuada (1 a 10):"));
+            
+            if (isNaN(numero)) {
+                console.log("Por favor, digite um número válido.");
+                return;
+            }
+
+            console.log(`Tabuada de ${numero}:`);
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${numero} x ${i} = ${numero * i}`);
+            }
+        }
+    </script>
+</head>
+<body onload="gerarTabuada()">
+    <h1>Tabuada de um Número</h1>
+    <p>Digite um número no prompt e abra o console para ver a tabuada.</p>
+</body>
+</html>

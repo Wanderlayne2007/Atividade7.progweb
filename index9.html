@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <title>Multiplicação Acumulativa</title>
+    <script>
+        function multiplicacaoAcumulativa() {
+            let resultado = 1;
+            for (let i = 1; i <= 5; i++) {
+                let numero = parseFloat(prompt(`Digite o número ${i}:`));
+                resultado *= numero;
+            }
+            console.log("Resultado da multiplicação:", resultado);
+        }
+    </script>
+</head>
+<body onload="multiplicacaoAcumulativa()">
+    <h1>Abra o console para ver o resultado da multiplicação.</h1>
+</body>
+</html>
+

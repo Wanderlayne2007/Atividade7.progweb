@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Número Primo</title>
+    <script>
+        function verificarPrimo() {
+            let numero = parseInt(prompt("Digite um número:"));
+            if (numero <= 1) {
+                console.log(`${numero} não é primo.`);
+                return;
+            }
+            for (let i = 2; i < numero; i++) {
+                if (numero % i === 0) {
+                    console.log(`${numero} não é primo.`);
+                    return;
+                }
+            }
+            console.log(`${numero} é primo.`);
+        }
+    </script>
+</head>
+<body onload="verificarPrimo()">
+    <h1>Abra o console para ver o resultado.</h1>
+</body>
+</html>

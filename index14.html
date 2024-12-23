@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   
+    <title>Pirâmide de Números</title>
+    <script>
+        function imprimirPiramide() {
+            for (let i = 1; i <= 5; i++) {
+                let linha = "";
+                for (let j = 1; j <= i; j++) {
+                    linha += i;
+                }
+                console.log(linha);
+            }
+        }
+    </script>
+</head>
+<body onload="imprimirPiramide()">
+    <h1>Abra o console para ver a pirâmide de números.</h1>
+</body>
+</html>

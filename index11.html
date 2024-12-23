@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <title>Fibonacci</title>
+    <script>
+        function gerarFibonacci() {
+            let n1 = 0, n2 = 1, proximo;
+            console.log("Sequência de Fibonacci:");
+            console.log(n1);
+            console.log(n2);
+            for (let i = 2; i < 10; i++) {
+                proximo = n1 + n2;
+                console.log(proximo);
+                n1 = n2;
+                n2 = proximo;
+            }
+        }
+    </script>
+</head>
+<body onload="gerarFibonacci()">
+    <h1>Abra o console para ver a sequência de Fibonacci.</h1>
+</body>
+</html>
